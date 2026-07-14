@@ -1,0 +1,1048 @@
+html{
+  scrollbar-width: none;
+  /* scroll-behavior: smooth */
+}
+@font-face {
+  font-family: palms;
+  src: url(fonts/PalmspringsPersonalUseRegular.ttf);
+}
+:root {
+      --bg-color: #ffffff;
+      --text-color: #333333;
+      --header-bg: #f5f5f5;
+    }
+
+    .dark-mode {
+      --bg-color: #121212;
+      --text-color: #f4f4f4;
+      --header-bg: #1e1e1e;
+    }
+.dark-mode .moon {
+      filter: invert(1);
+    }
+body{
+  background-color: var(--bg-color);
+      color: var(--text-color);
+    font-family: jost;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-image: url("./img/Главная.svg"); */
+    z-index: 0;
+}
+/* div {
+  border: 2px solid red;
+} */
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+    position: fixed;
+    top: -1vw;
+    width: 100vw;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    height: 5vw;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    /* background-color: #0000007b; */
+    /* margin-bottom: 5vw; */
+    /* border: 2px solid red; */
+}
+
+.header.colored {
+  background-color: rgba(10, 53, 28, 1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.panel{
+  width: 50vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.089);
+  position: fixed;
+  z-index: 200;
+  right: -100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* райт должно быть - 100проц */
+}
+.panel-menu{
+  margin-top: 3vw;
+  width: 40vw;
+  height: 53vh;
+  position: relative;
+  z-index: 200;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.1vw white solid;  
+}
+.langus{
+  width: 40vw;
+  height: 20vh;
+  position: relative;
+  z-index: 100;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 0.1vw white solid;
+  flex-wrap: wrap;
+  margin-top: 2vw;
+}
+.but_lang{
+  font-family: jost;
+  width: 9vw;
+  height: 3vw;
+  font-size: 1.5vw;
+  transition: 0.3s ease;
+  color: white;
+  cursor: pointer;
+  padding-left: 1vw;
+  margin-top: 0.5vw;
+}
+.but_lang:hover{
+  background-color: #FFFFFF;
+  color: black;
+  transform: scale(1.1);
+}
+.but{
+  text-decoration: none;
+  font-family: jost;
+  width: 29vw;
+  height: 2.5vw;
+  font-size: 1.5vw;
+  transition: 0.3s ease;
+  color: white;
+  cursor: pointer;
+  margin-top: 0.5vw;
+  padding: 0.5vw 0 0.5vw 1vw;
+}
+.but:hover{
+  background-color: #FFFFFF;
+  color: black;
+  transform: scale(1.1);
+  width: 100%;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    margin-right: 15px;
+    width: 4vw;
+    transition: 0.3s ease;
+}
+.ln{
+    width: 1.8vw;
+    transition: 0.3s ease;
+}
+.moon{
+    width: 1.3vw;
+    transition: 0.3s ease;
+}
+nav{
+  width: 10vw;
+  margin-top: 1vw;
+  margin-right: 3vw;
+      display: flex;flex-direction: row;align-items: center;
+    justify-content: space-evenly;
+}
+nav img{
+    margin-left: 1vw;
+    width: 5vw;
+}
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    /* width: 3vw; */
+    /* margin-left: 1.5vw; */
+    transition: 0.3s ease;
+}
+.burger{
+  width: 1.5vw;
+  height: 1.5vw;
+  margin-top: -0.2vw;
+  z-index: 201;
+}
+.menu-toggle:hover{
+  scale: 1.15;
+}
+.ln:hover{
+    scale: 1.15;
+}
+.moon:hover{
+    scale: 1.15;
+}
+.logo:hover{
+    scale: 1.15;
+}
+
+
+.prost{
+    font-family: "Jost";
+    font-size: 2vw;
+    color: rgba(255, 255, 255, 1);
+    font-size: 7vw;
+}
+.palm{
+    font-family: 'palms';
+    color: rgba(255, 255, 255, 1);
+    font-size: 7vw;
+    font-style: normal;
+    font-weight: 400;
+}
+h1{
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+.main{
+    background-image: url("./img/Главная.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 105vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* padding: 10px; */
+    z-index: 1;
+}
+.club{
+    /* margin-bottom: 15vw; */
+    font-family: 'Jost';
+    font-size: 2vw;
+    color: #FFFFFF;
+    margin-top: -1.5vw;
+}
+.oclub{
+  max-height: 100vh;
+}
+.about-section {
+    background-image: url("./img/loza_up.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 52vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+.opis h2 {
+    font-family: 'Jost';
+    font-size: 3vw;
+}
+.saz{
+    font-family: 'Jost';
+    font-size: 2.08vw;
+    /* width: 1337px; */
+    width: 70vw;
+}
+.free {
+    background-image: url("./img/vstavka1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 22.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 4px -23px 50px rgba(0, 0, 0, 0.2), 4px 50px 50px rgba(0, 0, 0, 0.2);    */
+    text-align: center;
+}
+.free2 {
+    background-image: url("./img/vstavka22.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 2vw;
+    height: 22.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 4px -23px 50px rgba(0, 0, 0, 0.2), 4px 50px 50px rgba(0, 0, 0, 0.2);    */
+    text-align: center;
+}
+.bloki{
+  height: 65vw;
+  cursor: default;
+}
+/* div{
+  border: 2px solid red; 
+}*/
+.bloki h2 {
+  font-family: 'Jost';
+  font-size: 2.5vw;
+  text-align: center;
+}
+.zagi{
+  color: #FFFFFF;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vw;
+  width: auto;
+  height: auto;
+  z-index: 2;
+  /* margin-top: 5vw; */
+}
+.photo-prem {
+  width: 7vw;
+  height: 7vw;
+  z-index: 2;
+  margin-top: 1vw;
+}
+.upa{
+  font-family: 'Jost';
+  font-style: italic;
+  text-align: center;
+  font-weight: 300;
+  color:#ffffffc0;
+  font-size: 1.3vw;
+  margin-top: 1vw;
+  width: 20vw;
+  z-index: 3;
+  /* margin-bottom: 5vw; */
+}
+.vet1{
+  position: absolute;
+  width: 25vw;
+  left: -15%;
+}
+.vet2{
+  position: absolute;
+  width: 25vw;
+  right: -15%;
+}
+.loza1{
+  position: absolute;
+  margin-top: 20vw;
+  width: 30vw;
+  z-index: 100;
+  left: -25%;
+}
+.loza2{
+  position: absolute;
+}
+.loza3{
+  position: absolute;
+  margin-top: -10vw;
+  width: 30vw;
+  right: -25%;
+  z-index: 100;
+}
+.opa{
+  font-family: 'Jost';
+  font-style: italic;
+  text-align: center;
+  margin: auto;
+  font-weight: 300;
+  font-size: 1.5vw;
+  width: 45vw;
+}
+.top-row {
+  display: flex;
+  gap: 6vw; /* Расстояние между блоками */
+  padding: 0 5vw;  /*Отступы по краям */
+  justify-content: center;
+  margin-bottom: 3vw;
+  margin-top: 5vw;
+  flex-wrap: wrap;
+}
+.box {
+  width: 25vw;
+  height: 23vw;
+  background-color: rgba(10, 55, 29, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-around; */
+  text-align: center;
+  font-weight: bold;
+  overflow: hidden;
+  color: #333;
+  z-index: 2;
+  transition: 0.3s ease;
+  /* transition: transform 0.2s ease; */
+}
+.box:hover {
+  transform: scale(1.05);
+}
+.box:hover .box-hover{
+  bottom: -50%
+}
+.box-hover{
+  width: 85vw;
+  height: 23vw;
+  position: absolute;
+  rotate: 45deg;
+  bottom: -200%; z-index: 1;
+  background-color: rgba(2, 28, 13, 0.4);
+  transition: 0.6s ease;
+}
+.bottom-row {
+  display: flex;
+  gap: 5vw; /*Расстояние между нижними блоками*/
+  justify-content: center;
+  position: absolute;
+  /* bottom: 40px; */
+  left: 50vw;
+  transform: translateX(-50%);
+}
+footer{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  width: 100vw;
+  height: 23vw;
+  /* background-color: #FFFFFF; */
+  margin-top: 5vw;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 -0.1vw 2.3vw rgba(108, 108, 108, 0.180);
+  overflow: hidden;
+}
+/* div{
+  border: solid red 0.1vw; 
+}*/
+.foot-1{
+  width: 38vw;
+  height: 23vw;
+  /* background-color: white; */
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-foot{
+  width: 7vw;
+  height: 7vw;
+  margin: 1vw 1vw;
+}
+.p1{
+  /* color: rgba(0, 0, 0, 0.58); */
+  font-size: 1.3vw;
+  margin-top: 0.1vw;
+  padding: 0 0.4vw;
+}
+.p2{
+  /* color: rgba(0, 0, 0, 0.58); */
+  font-size: 1.9vw;
+  margin-top: 1vw;
+  padding: 0 0.4vw;
+  margin-bottom: 1vw;
+}
+.p3{
+  /* color: rgba(0, 0, 0, 0.58); */
+  font-size: 1.3vw;
+  margin: 0vw 0 1vw 1vw;
+}
+.foot-2{
+  width: 25vw;
+  height: 23vw;
+  /* background-color: rgb(255, 255, 255); */
+}
+.foot-3{
+  width: 17.917vw;
+  height: 23vw;
+  /* background-color: rgb(255, 255, 255); */
+}
+.foot-4{
+  width: 18.802vw;
+  height: 23vw;
+  /* background-color: rgb(255, 255, 255); */
+}
+.socseti{
+  width: 16vw;
+  height: 4vw;
+  display: flex;
+  flex-direction: row;
+}
+.socseti-item{
+  width: 3vw;
+  height: 3vw;
+  margin: 0.5vw auto;
+  transition: 0.2s ease;
+  cursor: pointer;
+  border-bottom: rgba(128, 128, 128, 0) 0vw solid;
+  will-change: scale;
+  transition: 0.2s ease;
+  filter: grayscale(1);
+  border-radius: 200vw;
+}
+.socseti-item:hover{
+  scale: 1.1;
+  /* border-bottom: gray 0.2vw solid; */
+}
+.foot-list{
+  position: absolute;
+  left: 10vw;
+}
+.foot-flower{
+  position: absolute;
+  margin-left: 3vw;
+  bottom: 25%;
+}
+.by{
+  width: 13vw;
+  height: 13vw;
+  position: absolute;
+  top: 222.5vw;
+  z-index: 22225;
+}
+.be{
+  width: 13vw;
+  height: 13vw;
+  position: absolute;
+  left: 87vw;
+  top: 296vw;
+  z-index: 2222;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  background: #eee;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.close-btn:hover {
+  background: #ffffff;
+}
+
+.object-image {
+  width: 10vw;
+  height: 10vw;
+  margin-bottom: 15px;
+}
+#default-content {
+  text-align: center;
+  margin-top: 100px;
+  /* color: #000000; */
+  font-family: "Jost";
+  font-size: 1vw;
+}
+h1 {
+  /* color: black; */
+  margin-top: 0;
+  font-family: "Jost";
+  font-size: 2vw;
+  text-align: center;
+  margin-top: 2.8vw;
+}
+#object-title{
+  
+  font-family: "Jost";
+}
+#object-description{
+  font-size: 1.5vw;
+  text-align: center;
+  font-family: "Jost";
+}
+#object-image-container {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+#object-image {
+  width: 30vw;
+  height: 23vw;
+  margin: 2vw auto;
+}
+.a1{
+  z-index: 12;
+  margin-top: 5vw;
+  width: 6vw;
+}
+.gifi{
+  position: absolute;
+  top: 20.5vw;
+  left: 24vw;
+  width: 5vw;
+  height: 5vw;
+}
+.knopika{
+  margin-left: 15vw;
+  width: 16vw;
+  height: 3vw;
+  border: none;
+  color: white;
+  font-size: 1.5vw;
+  font-family: "Jost";
+  background: linear-gradient(268.02deg, #7D963B 7.69%, #444E30 93.05%);
+  border-radius: 221px;
+  cursor: pointer;
+}
+
+/* коттеджи */
+
+.cottages-container {
+  margin-top: 5vw;
+    display: flex;
+    flex-wrap: wrap; /* Для переноса на новую строку на маленьких экранах */
+    gap: 4vw; /* Пространство между карточками */
+    justify-content: center;
+    max-width: 100vw; /* Ограничение максимальной ширины контейнера */
+    width: 100%;
+}
+
+.cottage-card {
+    flex: 1 1 25vw; /* Гибкость: позволяет карточкам расти, но не сжиматься меньше 300px */
+    max-width: 25vw; /* Максимальная ширина одной карточки */
+    /* border-radius: 8px; */
+    overflow: hidden;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+    position: relative; /* Для позиционирования оверлея */
+    transition: transform 0.3s ease;
+    transition: 0.3s ease;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.cottage-card:hover {
+    transform: translateY(-5px); /* Небольшой подъем при наведении на всю карточку */
+}
+
+.cottage-image-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 125%; /* Соотношение сторон изображения (например, 4:5). (высота/ширина * 100) */
+                                /* Если ваши изображения квадратные, используйте 100% */
+                                /* Если они более вытянутые, как на макете, подберите это значение */
+}
+
+.cottage-image-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Масштабирует изображение, сохраняя пропорции и обрезая лишнее */
+    display: block;
+}
+
+.cottage-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0) 100%);
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Прижимает контент к низу оверлея */
+    height: 100%; /* Оверлей занимает всю высоту обертки изображения */
+}
+
+.cottage-title {
+    position: absolute;
+    top: 0; /* Заголовок сверху */
+    left: 0;
+    width: 100%;
+    background-color: rgba(67, 106, 51, 0.9); /* Зеленый фон для заголовка, как на макете */
+    padding: 10px 20px;
+    font-size: 1.4em; /* Размер шрифта заголовка */
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+.cottage-price-info {
+    text-align: center;
+    font-size: 4vw;
+    margin-bottom: 15px; /* Отступ под ценой */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.cottage-card:hover .cottage-price-info {
+    opacity: 1; /* При ховере цена остается видимой */
+}
+
+.price {
+    font-size: 1.5em; /* Размер цены */
+    font-weight: 700;
+    display: block;
+}
+
+.per-night {
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.details-button {
+    background-color: #436A33; /* Зеленый цвет кнопки */
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+    opacity: 0; /* Изначально кнопка невидима */
+    transform: translateY(20px); /* Изначально сдвинута вниз */
+    transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.2s ease;
+    align-self: center; /* Центрирование кнопки */
+    width: calc(100% - 40px); /* Ширина кнопки с учетом padding оверлея */
+    max-width: 200px;
+}
+
+.cottage-card:hover .details-button {
+    opacity: 1; /* Показываем кнопку при наведении */
+    transform: translateY(0); /* Возвращаем кнопку на место */
+}
+
+.details-button:hover {
+    background-color: #36582A; /* Более темный зеленый при наведении на кнопку */
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .cottage-card {
+        flex-basis: calc(50% - 10px); /* Две карточки в ряд с учетом gap */
+        max-width: none; /* Убираем ограничение для лучшей адаптации */
+    }
+    .cottage-title {
+        font-size: 1.2em;
+    }
+    .price {
+        font-size: 1.8em;
+    }
+    .details-button {
+        font-size: 0.9em;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cottage-card {
+        flex-basis: 100%; /* Одна карточка в ряд */
+    }
+}
+
+
+
+
+
+
+/* Десктопная версия НЕ УБИРАТЬ!!!!!*/
+@media (min-width: 769px) {
+  .container {
+      flex-direction: row;
+  }
+  .karta {
+      width: 50vw;
+      height: 100vh;
+  }
+  #info-panel {
+      width: 50vw;
+      height: 100vh;
+      border-top: none;
+      /* border-left: 1px solid #ddd; */
+  }
+  .home, .stolovka, .bani, .home2, .parsing {
+      width: 40px;
+      height: 40px;
+  }
+  .home img, .stolovka img, .bani img, .parsing img {
+      width: 25px;
+      height: 25px;
+  }
+  .home2 img {
+      width: 22px;
+      height: 22px;
+  }
+  h2 {
+      font-size: 1.8rem;
+  }
+  .prop-item {
+      font-size: 1rem;
+  }
+}
+@media (max-width: 430px) {
+      .header {
+        padding: 3vw 0 0 1vw;
+        width: 100%;
+      }
+
+      .logo {
+        width: 8vw;
+        margin-top: 0;
+      }
+
+      .ln {
+        width: 5vw;
+      }
+
+      .moon {
+        width: 4vw;
+      }
+
+      #burger {
+        width: 4vw;
+        margin-right: 5vw;
+      }
+
+      .panel {
+        width: 100%;
+        right: -100%;
+      }
+
+      .panel.active {
+        right: 0;
+      }
+
+      .panel-menu {
+        width: 90%;
+        height: auto;
+      }
+
+      .langus {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .but, .but_lang {
+        width: 100%;
+        text-align: center;
+        font-size: 4vw;
+        height: auto;
+        padding: 1vw 0;
+      }
+      footer {
+        flex-direction: column;
+        min-height: auto;
+        padding: 6vw 4vw;
+        overflow: visible;
+      }
+
+      .foot-2 {
+        order: 4;
+      }
+
+      .foot-1,
+      .foot-2,
+      .foot-3,
+      .foot-4 {
+        height: 80vw;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 10vw;
+        padding: 4vw 2vw;
+        border-bottom: 1px solid #eee;
+      }
+
+      .logo-foot {
+        width: 20vw;
+        height: 20vw;
+        margin-bottom: 2vw;
+      }
+
+      .p1 {
+        font-size: 4vw;
+      }
+
+      .p2 {
+        font-size: 5vw;
+      }
+
+      .p3 {
+        font-size: 3vw;
+      }
+
+      .socseti {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        margin-top: 4vw;
+      }
+
+      .socseti-item {
+        width: 10vw;
+        height: 10vw;
+      }
+
+      .foot-list,
+      .foot-flower {
+        display: none;
+      }  
+      .karta {
+        width: 100vw;
+        height: 50vh;
+        top: -1vw;
+        left: 0;
+        z-index: 0;
+        position: relative;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: none; /* Убираем debug-границу */
+        margin: 0 auto;
+        overflow: visible;
+        /* z-index: 0; */
+      }
+      
+      .container {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+        overflow: visible;
+      }
+
+  #info-panel {
+      width: 100vw;
+      height: 100vw;
+      padding: 15px;
+      min-height: 50vh;
+  }
+
+  /* Уменьшаем размеры маркеров */
+  [class*="home"] img,    
+  .med1 img,
+  .med2 img,
+  .stolovka img,
+  .bani img,
+  .football img,
+  .footballsmall img,
+  .bascet img,
+  .voleball img, .personal img
+  {
+      width: 4vw !important;
+      height: 4vw !important;
+  }
+  .tennis img,
+  .tennistable img,
+  .dgip img   {
+      width: 4.5vw !important;
+      height: 4.5vw !important;
+  }
+  [class*="bil"] img{
+      width: 5vw !important;
+      height: 5vw !important;
+  }
+  /* Крупные маркеры */
+  .forest img,
+  .fish img,
+  .golf img,
+  .parsing img,
+  .horse img,
+  .consert img,
+  .lake1 img,
+  .lake2 img {
+      width: 7vw !important;
+      height: 7vw !important;
+  }
+  /* Адаптация инфо-панели */
+  /* #default-content {
+      margin-top: 30px;
+      font-size: 16px;
+  } */
+  h1 {
+      font-size: 22px;
+      /* margin-bottom: 35vw; */
+      position: relative;
+      bottom: 25vw;
+  }    
+  p{
+      font-size: 3vw;
+      position: relative;
+      bottom: 25vw;
+  }
+  .a1{
+      width: 20vw;
+      position: relative;
+      bottom: 25vw;
+  }    
+  .gifi {
+      top: 33vw;
+      left: 48vw;
+      width: 15vw;
+      height: 15vw;
+      z-index: 111;
+      /* position: relative; */
+      /* bottom: 25vw; */
+  }
+  #object-title {
+      font-size: 4vw;
+      /* margin-bottom: 5vw; */
+      position: relative;
+      bottom: 2vw;
+  }
+  #object-description {
+      font-size: 3vw;
+  }
+  #object-image {
+      width: 55vw;
+      height: 37vw;
+      margin: 15px auto;
+  }
+  .knopika {
+      margin-left: 24vw;
+      width: 45vw;
+      height: 33px;
+      font-size: 16px;
+  }
+  /* Уменьшаем hover-эффект */
+  [class*="home"] img:hover,
+  .stolovka img:hover,
+  .bil img:hover {
+      transform: translate(-50%, -50%) scale(1.2);
+  }
+  .close-btn {
+      position: absolute;
+      bottom: 25vw;
+      width: 30px;
+      height: 30px;
+      z-index: 1111;
+  }
+  .by{
+    display: none;
+  }
+  .be{
+  display: none;
+  }
+  .sec5{
+    width:100%;
+    height:80vw;
+    position: relative;
+    overflow: hidden; /* Скрываем лишние слайды */
+    z-index: 10000;
+  }
+  .strelka1,
+.strelka2 {
+  width: 7vw;
+  height: 7vw;
+  position: absolute;
+  top: 40vw;
+  cursor: pointer;
+  z-index: 60;
+}
+    }
