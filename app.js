@@ -13,6 +13,7 @@ toggleBtn.addEventListener('click', () => {
 
 
   if (isOpen) {
+    // Анимация выдвижения
     gsap.to(slideBox, {
 		duration: 0.6,
 		right: '0',
