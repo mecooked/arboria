@@ -10,6 +10,8 @@
 
 <img width="100%" height="100%" alt="Desktop 2026 08 06 - 16 16 03 01 (online-video-cutter com) (2)" src="https://github.com/user-attachments/assets/175a3922-3774-4855-af54-c18219c8d3e8" />
 
+<img width="100%" height="100%" alt="Desktop 2026 08 07 - 21 54 44 01 (online-video-cutter com)" src="https://github.com/user-attachments/assets/cdd7f236-bd00-44cc-a87f-c545b2be41f4" />
+
 ## 🔹 Стек технологий
 * **Вёрстка** - HTML5, CSS3;
 * **Логика** - JavaScript (ES6+);
