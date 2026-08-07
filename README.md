@@ -17,6 +17,8 @@
 
 <img width="100%" height="100%" alt="Desktop 2026 08 07 - 21 54 44 01 (online-video-cutter com)" src="https://github.com/user-attachments/assets/cdd7f236-bd00-44cc-a87f-c545b2be41f4" />
 
+<img width="100%" height="100%" alt="Desktop 2026 08 07 - 22 39 40 02 (online-video-cutter com)" src="https://github.com/user-attachments/assets/69cc9426-0662-46f5-a846-c76b2ba6b816" />
+
 ## 🔹 Стек технологий
 * **Вёрстка** - HTML5, CSS3;
 * **Логика** - JavaScript (ES6+);
@@ -24,4 +26,4 @@
 * **Дизайн** - Figma.
 
 ## 🔹 Связаться со мной
-Почта: @gjxnf
+Почта: ---
