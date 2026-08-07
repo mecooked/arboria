@@ -1,6 +1,6 @@
 # АРБОРИЯ
 
-[Смотреть сайт (Live Demo) ➔](https:mecooked.github.io/arboria/)
+[Смотреть сайт (Live Demo) ➔](https://mecooked.github.io/arboria/)
 
 <img width="3432" height="1677" alt="Component 36 1 (1)" src="https://github.com/user-attachments/assets/01455971-6d08-4677-98d9-ec445157dcc8" />
 
