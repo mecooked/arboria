@@ -13,7 +13,16 @@
 
 <img width="100%" height="100%" alt="Desktop 2026 08 06 - 16 16 03 01 (online-video-cutter com) (2)" src="https://github.com/user-attachments/assets/175a3922-3774-4855-af54-c18219c8d3e8" />
 
+Самым сложным в проекте было не перегрузить <br>
+и умеренно пользоваться анимациями и декоративными эффектами. <br>
+Важной задачей было передать посетителю информацию <br>
+не отвлекая внимания от главного. При этом создав атмосферу, <br>
+что способствует погружению в проект, а значит вероятнее заинтересует.
+
 <img width="100%" height="100%" alt="Desktop 2026 08 07 - 21 54 44 01 (online-video-cutter com)" src="https://github.com/user-attachments/assets/cdd7f236-bd00-44cc-a87f-c545b2be41f4" />
+
+Дизайн разрабатывался совместно с одногруппниками для проекта <br>
+по одной из основных дисциплин специальности.
 
 <img width="100%" height="100%" alt="Desktop 2026 08 07 - 22 39 40 02 (online-video-cutter com)" src="https://github.com/user-attachments/assets/69cc9426-0662-46f5-a846-c76b2ba6b816" />
 
